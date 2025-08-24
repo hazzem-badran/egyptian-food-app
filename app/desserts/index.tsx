@@ -11,7 +11,7 @@ const DessertsPage = () => {
 
   return (
     <GenericPage
-      title="Desserts | حلويات"
+      title="desserts"
       data={DESSERTS}
       route={ROUTES.DESSERTS}
     />

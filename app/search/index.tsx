@@ -73,7 +73,7 @@ const SearchPage: React.FC = () => {
   // console.log("results  ", results);
   return (
     <SafeAreaView style={styles.container}>
-      <SectionHeading title={t("search")} />
+      <SectionHeading title={"search"} />
 
       {/* حقل البحث */}
       <View style={styles.inputContainer} >
@@ -137,7 +137,7 @@ const createStyles = (isEnLang: boolean) =>
       marginTop: 20,
       fontSize: 16,
       color: COLORS.primary,
-      fontFamily: "IBMPlexBold",
+      fontFamily: "OpenSans",
     },
     emptyContainer: {
       flexGrow: 1,

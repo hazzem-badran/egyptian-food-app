@@ -1,8 +1,8 @@
-import { View, Text, TouchableOpacity, StyleSheet, Image } from "react-native";
-import React from "react";
-import { COLORS } from "@/theme/colors";
 import useAppTranslation from "@/hooks/useAppTranslation";
+import { COLORS } from "@/theme/colors";
 import { useRouter } from "expo-router";
+import React from "react";
+import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
 interface CardProps {
   title: string;
@@ -92,7 +92,7 @@ const createStyles = (color: any) =>
     },
     foodName: {
       fontSize: 18,
-      fontFamily: "IBMPlexBold",
+      fontFamily: "OpenSans",
       color: color.text,
       textAlign: "center",
       marginTop: 5,

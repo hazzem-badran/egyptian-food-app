@@ -145,7 +145,7 @@ const createStyles = (isRTL: boolean) =>
     },
     nameDishes: {
       color: COLORS.primary,
-      fontFamily: "IBMPlexBold",
+      fontFamily: "OpenSans",
       fontSize: 26,
       marginBottom: 15,
       textAlign: isRTL ? "right" : "left",
@@ -167,7 +167,7 @@ const createStyles = (isRTL: boolean) =>
     },
     infoText: {
       color: COLORS.primary,
-      fontFamily: "IBMPlexBold",
+      fontFamily: "OpenSans",
       textAlign: "center",
       marginTop: 5,
       fontSize: 14,
@@ -184,7 +184,7 @@ const createStyles = (isRTL: boolean) =>
       color: COLORS.primary,
       fontSize: 20,
       marginVertical: 10,
-      fontFamily: "IBMPlexBold",
+      fontFamily: "OpenSans",
       textAlign: isRTL ? "right" : "left",
     },
     bulletItem: {
@@ -215,7 +215,7 @@ const createStyles = (isRTL: boolean) =>
     stepNumber: {
       color: COLORS.primary,
       fontSize: 18,
-      fontFamily: "IBMPlexBold",
+      fontFamily: "OpenSans",
       marginRight: isRTL ? 0 : 8,
       marginLeft: isRTL ? 8 : 0,
     },
@@ -267,7 +267,7 @@ const createStyles = (isRTL: boolean) =>
 //     },
 //     nameDishes: {
 //       color: COLORS.primary,
-//       fontFamily: "IBMPlexBold",
+//       fontFamily: "OpenSans",
 //       fontSize: 26,
 //       marginBottom: 15,
 //     },
@@ -288,7 +288,7 @@ const createStyles = (isRTL: boolean) =>
 //     },
 //     infoText: {
 //       color: COLORS.primary,
-//       fontFamily: "IBMPlexBold",
+//       fontFamily: "OpenSans",
 //       textAlign: "center",
 //       marginTop: 5,
 //       fontSize: 14,
@@ -308,7 +308,7 @@ const createStyles = (isRTL: boolean) =>
 //       color: COLORS.primary,
 //       fontSize: 20,
 //       marginVertical: 10,
-//       fontFamily: "IBMPlexBold",
+//       fontFamily: "OpenSans",
 //     },
 //     bulletItem: {
 //       flexDirection: isRTL ? "row" : "row-reverse",
@@ -340,7 +340,7 @@ const createStyles = (isRTL: boolean) =>
 //       marginRight: isRTL ? 8 : 0,
 //       marginLeft: isRTL ? 0 : 8,
 
-//       fontFamily: "IBMPlexBold",
+//       fontFamily: "OpenSans",
 //     },
 //     stepText: {
 //       color: COLORS.text,

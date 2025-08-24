@@ -1,17 +1,19 @@
-import {
-  View,
-  Text,
-  StyleSheet,
-  TouchableOpacity,
-  Platform,
-} from "react-native";
+import useAppTranslation from "@/hooks/useAppTranslation";
+import { COLORS } from "@/theme/colors";
+import { SectionHeadingProps } from "@/types/sectionHeadingProps.types";
 import { Ionicons } from "@expo/vector-icons";
 import { useRouter } from "expo-router";
-import { COLORS } from "@/theme/colors";
 import React from "react";
-import { SectionHeadingProps } from "@/types/sectionHeadingProps.types";
+import {
+  Platform,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
+} from "react-native";
 
 const SectionHeading: React.FC<SectionHeadingProps> = ({ title }) => {
+  const { t } = useAppTranslation();
   const router = useRouter();
 
   return (
@@ -21,7 +23,7 @@ const SectionHeading: React.FC<SectionHeadingProps> = ({ title }) => {
         Platform.OS === "android" && styles.androidContainer,
       ]}
     >
-      <Text style={styles.heading}>{title}</Text>
+      <Text style={styles.heading}>{t(title)}</Text>
 
       <TouchableOpacity style={styles.backButton} onPress={() => router.back()}>
         <Ionicons name="chevron-forward" size={28} color={COLORS.primary} />
@@ -46,10 +48,12 @@ const styles = StyleSheet.create({
     marginTop: 25,
   },
   heading: {
-    fontSize: 18,
-    fontFamily: "IBMPlexBold",
-    fontWeight: "bold",
+    fontSize: 22,
+    fontFamily: "OpenSansItalic",
+    fontWeight: "900",
     textAlign: "center",
+    color: COLORS.primary,
+
   },
   backButton: {
     position: "absolute",

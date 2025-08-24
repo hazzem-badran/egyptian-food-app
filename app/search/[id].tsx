@@ -165,7 +165,7 @@ const createStyles = (isEnLang: boolean) =>
     },
     nameDishes: {
       color: COLORS.primary,
-      fontFamily: "IBMPlexBold",
+      fontFamily: "OpenSans",
       fontSize: 26,
       marginBottom: 15,
     },
@@ -186,7 +186,7 @@ const createStyles = (isEnLang: boolean) =>
     },
     infoText: {
       color: COLORS.primary,
-      fontFamily: "IBMPlexBold",
+      fontFamily: "OpenSans",
       textAlign: "center",
       marginTop: 5,
       fontSize: 14,
@@ -202,7 +202,7 @@ const createStyles = (isEnLang: boolean) =>
       color: COLORS.primary,
       fontSize: 20,
       marginVertical: 10,
-      fontFamily: "IBMPlexBold",
+      fontFamily: "OpenSans",
     },
     bulletItem: {
       flexDirection: isEnLang ? "row" : "row-reverse",
@@ -229,7 +229,7 @@ const createStyles = (isEnLang: boolean) =>
       color: COLORS.primary,
       fontSize: 18,
       marginRight: 8,
-      fontFamily: "IBMPlexBold",
+      fontFamily: "OpenSans",
     },
     stepText: {
       color: COLORS.text,

@@ -1,6 +1,9 @@
 const pharaonicTheme = {
-  primary: "#c38121",
-  background: "#261505",
+  background: "#261505", // خلفية غامقة ثابتة
+  primary: "#C38121", // برونزي/ذهبي قوي (Accent)
+  card: "#F5E6C3", // بيج فاتح يوازن العتمة
+  border: "#D4A76A", // ذهبي فاتح قريب من الـ primary
+  text: "#F5E6C3", // Light beige color for better contrast
 
   cardColors: {
     amberDark: {
@@ -40,9 +43,6 @@ const pharaonicTheme = {
       text: "#B59B66",
     },
   },
-  card: "#feedce", // بيج فاتح للبطاقات أو الحقول
-  border: "#edad6b", // ذهبي ناعم (لون سنابل القمح)
-  text: "#3b2f1a", // بني داكن للنصوص الأساسية
 
   white: "#FFFF",
   shadow: "rgba(0,0,0,0.06)",

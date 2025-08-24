@@ -10,7 +10,7 @@ const BakedPage = () => {
   const BAKED: BaseRecipe[] = isArLang ? BAKED_AR : BAKED_EN;
 
   return (
-    <GenericPage title="Baked | مخبوزات" data={BAKED} route={ROUTES.BAKED} />
+    <GenericPage title="baked" data={BAKED} route={ROUTES.BAKED} />
   );
 };
 
