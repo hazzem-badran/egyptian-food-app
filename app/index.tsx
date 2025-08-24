@@ -5,11 +5,13 @@ import HelpTools from "@/components/home/HelpTools";
 import HeroImage from "@/components/home/HeroImage";
 import Card from "@/components/home/Card";
 import { FOOD_ROWS } from "@/constents/foodRows";
+import useAppTranslation from "@/hooks/useAppTranslation";
 
 const { width } = Dimensions.get("window");
 
 export default function Index() {
   const scrollRef = useAnimatedRef<Animated.ScrollView>();
+   const {isArLang} = useAppTranslation()
 
   return (
     <View style={styles.root}>
@@ -21,7 +23,8 @@ export default function Index() {
         bounces
         showsVerticalScrollIndicator={false}
       >
-        <HeroImage />
+        <HeroImage scrollRef={scrollRef} isArLang={isArLang} />
+
         <Image
           source={require("@/assets/images/home/decor.jpg")}
           style={styles.decor}

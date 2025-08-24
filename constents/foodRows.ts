@@ -1,4 +1,4 @@
-import { FoodRow } from "@/types/home";
+import { FoodRow } from "@/types/home.types";
 
 export const FOOD_ROWS: FoodRow[] = [
   [
