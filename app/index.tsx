@@ -1,15 +1,82 @@
-import { Text, View } from "react-native";
+import { Dimensions, Image, StyleSheet, View } from "react-native";
+import Animated, { useAnimatedRef } from "react-native-reanimated";
+import { COLORS } from "@/theme/colors";
+import HelpTools from "@/components/home/HelpTools";
+import HeroImage from "@/components/home/HeroImage";
+import Card from "@/components/home/Card";
+import { FOOD_ROWS } from "@/constents/foodRows";
+
+const { width } = Dimensions.get("window");
 
 export default function Index() {
+  const scrollRef = useAnimatedRef<Animated.ScrollView>();
+
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text>Edit app/index.tsx to edit this screen.</Text>
+    <View style={styles.root}>
+      <HelpTools />
+      <Animated.ScrollView
+        ref={scrollRef}
+        scrollEventThrottle={16}
+        style={[styles.content]}
+        bounces
+        showsVerticalScrollIndicator={false}
+      >
+        <HeroImage />
+        <Image
+          source={require("@/assets/images/home/decor.jpg")}
+          style={styles.decor}
+        />
+
+        <View style={styles.containItems}>
+          {FOOD_ROWS.map((row, rowIndex) => (
+            <View key={rowIndex} style={styles.rowItems}>
+              {row.map((item, index) =>
+                item ? (
+                  <Card
+                    key={item.title}
+                    title={item.title}
+                    color={item.color}
+                    isFull={item.isFull}
+                  />
+                ) : (
+                  <View key={`empty-${index}`} style={styles.emptyCard} />
+                )
+              )}
+            </View>
+          ))}
+        </View>
+      </Animated.ScrollView>
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+  root: {
+    flex: 1,
+  },
+  decor: {
+    width: width,
+    height: 55,
+    marginBottom: 20,
+    resizeMode: "repeat",
+  },
+  content: {
+    width: "100%",
+    backgroundColor: COLORS.background,
+  },
+  containItems: {
+    paddingTop: 9,
+    paddingBottom: 80,
+  },
+  rowItems: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    paddingVertical: 12,
+    paddingHorizontal: 20,
+    width: "100%",
+  },
+  emptyCard: {
+    width: "47%",
+  },
+});
