@@ -40,6 +40,10 @@ const pharaonicTheme = {
       text: "#B59B66",
     },
   },
+  card: "#feedce", // بيج فاتح للبطاقات أو الحقول
+  border: "#edad6b", // ذهبي ناعم (لون سنابل القمح)
+  text: "#3b2f1a", // بني داكن للنصوص الأساسية
+
   white: "#FFFF",
   shadow: "rgba(0,0,0,0.06)",
 };

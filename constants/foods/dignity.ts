@@ -1,6 +1,6 @@
 import { BaseRecipe } from "@/types/recipe.types";
 
-export const DIGNITY_AR: BaseRecipe[] = [
+export const PHARAONIC_AR: BaseRecipe[] = [
   {
     id: 1,
     title: "مقلوبة كذابة",
@@ -178,7 +178,7 @@ export const DIGNITY_AR: BaseRecipe[] = [
   },
 ];
 
-export const DIGNITY_EN: BaseRecipe[] = [
+export const PHARAONIC_EN: BaseRecipe[] = [
   {
     id: 1,
     title: "Fake Maqluba",

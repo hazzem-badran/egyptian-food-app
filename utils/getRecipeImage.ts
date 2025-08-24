@@ -1,4 +1,4 @@
-import { IMAGES } from "@/constents/foodimages";
+import { IMAGES } from "@/constants/foodimages";
 
 export const getRecipeImage = (imageKey: string) => {
   // console.log("imageKey", imageKey);
