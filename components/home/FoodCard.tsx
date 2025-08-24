@@ -11,7 +11,7 @@ interface CardProps {
   route: string;
 }
 
-const Card: React.FC<CardProps> = ({ title, color, isFull, route }) => {
+const FoodCard: React.FC<CardProps> = ({ title, color, isFull, route }) => {
   const router = useRouter();
   const { t } = useAppTranslation();
 
@@ -44,7 +44,7 @@ const Card: React.FC<CardProps> = ({ title, color, isFull, route }) => {
   );
 };
 
-export default Card;
+export default FoodCard;
 
 const createStyles = (color: any) =>
   StyleSheet.create({
@@ -91,12 +91,12 @@ const createStyles = (color: any) =>
       tintColor: color.tintColor,
     },
     foodName: {
-      fontSize: 18,
+      fontSize: 22,
       fontFamily: "OpenSans",
       color: color.text,
       textAlign: "center",
       marginTop: 5,
-      fontWeight: "bold",
+      fontWeight: "900",
     },
     foodCategoryFull: {
       width: "100%",
