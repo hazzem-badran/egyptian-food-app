@@ -5,12 +5,12 @@ import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 
 const SettingSection: React.FC<SettingSectionProps> = ({ title, children }) => {
-  const { isEnLang } = useAppTranslation();
+  const { t, isEnLang } = useAppTranslation();
   const styles = createStyles(isEnLang);
 
   return (
     <View style={styles.section}>
-      <Text style={styles.sectionTitle}>{title}</Text>
+      <Text style={styles.sectionTitle}>{t(title)}</Text>
       {children}
     </View>
   );

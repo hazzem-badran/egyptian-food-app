@@ -9,7 +9,7 @@ const MunaPage = () => {
   const { isArLang } = useAppTranslation();
   const MUNAS: BaseRecipe[] = isArLang ? MUNA_AR : MUNA_EN;
 
-  return <GenericPage title="Pantry | مونة" data={MUNAS} route={ROUTES.MUNA} />;
+  return <GenericPage title="muna" data={MUNAS} route={ROUTES.MUNA} />;
 };
 
 export default MunaPage;

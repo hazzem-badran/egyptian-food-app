@@ -55,7 +55,7 @@ const createStyles = (isEnLang: boolean) =>
     },
     recipeTitle: {
       fontSize: 16,
-      fontFamily: "IBMPlexBold",
+      fontFamily: "OpenSans",
       color: COLORS.primary,
     },
   });

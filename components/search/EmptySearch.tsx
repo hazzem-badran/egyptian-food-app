@@ -1,8 +1,8 @@
-import { View, Text, Animated, StyleSheet } from "react-native";
-import React, { useEffect, useRef } from "react";
-import { Ionicons } from "@expo/vector-icons";
-import { COLORS } from "@/theme/colors";
 import useAppTranslation from "@/hooks/useAppTranslation";
+import { COLORS } from "@/theme/colors";
+import { Ionicons } from "@expo/vector-icons";
+import React, { useEffect, useRef } from "react";
+import { Animated, StyleSheet, Text, View } from "react-native";
 
 const EmptySearch = () => {
   const { t } = useAppTranslation();
@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
   emptyText: {
     fontSize: 18,
     color: COLORS.primary,
-    fontFamily: "IBMPlexBold",
+    fontFamily: "OpenSans",
     marginTop: 10,
   },
   emptyContainer: {

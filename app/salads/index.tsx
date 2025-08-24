@@ -10,7 +10,7 @@ const SaladsPage = () => {
   const SALADS: BaseRecipe[] = isArLang ? SALADS_AR : SALADS_EN;
 
   return (
-    <GenericPage title="Salads | سلطات" data={SALADS} route={ROUTES.SALADS} />
+    <GenericPage title="salads" data={SALADS} route={ROUTES.SALADS} />
   );
 };
 

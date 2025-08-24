@@ -35,7 +35,7 @@ const FavoritesPage = () => {
 
   return (
     <SafeAreaView style={styles.container}>
-      <SectionHeading title="Favorite | المفضلة" />
+      <SectionHeading title="favorite" />
 
       <FlatList
         data={recipes}

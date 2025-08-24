@@ -13,7 +13,7 @@ const PharaonicPage = () => {
 
   return (
     <GenericPage
-      title="Recipes Pharaonic | وصفات فرعونية"
+      title={"pharaonic_dishes"}
       data={RECIPES}
       route={ROUTES.PHARAONIC}
     />

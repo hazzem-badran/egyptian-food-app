@@ -11,7 +11,7 @@ const MainDishesPage = () => {
 
   return (
     <GenericPage
-      title="Main Dishes | الأطباق الرئيسية"
+      title="main_dishes"
       data={RECIPES}
       route={ROUTES.MAIN_DISHES}
     />

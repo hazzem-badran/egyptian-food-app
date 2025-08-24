@@ -52,7 +52,7 @@ const SettingsPage = () => {
         <Text style={styles.title}>{t("settings")}</Text>
 
         {/* App Features */}
-        <SettingSection title={t("app_features")}>
+        <SettingSection title={"app_features"}>
           <SettingItem
             icon="star"
             title={t("app_features")}

@@ -1,7 +1,7 @@
-import { Text, TouchableOpacity, StyleSheet, Platform } from "react-native";
-import React from "react";
 import { COLORS } from "@/theme/colors";
 import { ButtonProps } from "@/types/button.types";
+import React from "react";
+import { Platform, StyleSheet, Text, TouchableOpacity } from "react-native";
 
 const Button: React.FC<ButtonProps> = ({ title, press }) => {
   return (
@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
   },
   backButtonText: {
     color: COLORS.white,
-    fontFamily: "IBMPlexBold",
+    fontFamily: "OpenSans",
     fontSize: 18,
   },
 });

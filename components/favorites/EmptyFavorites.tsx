@@ -1,8 +1,8 @@
-import React, { useEffect, useRef } from "react";
-import { View, Text, StyleSheet, Animated, Easing } from "react-native";
-import { Ionicons } from "@expo/vector-icons";
-import { COLORS } from "@/theme/colors";
 import useAppTranslation from "@/hooks/useAppTranslation";
+import { COLORS } from "@/theme/colors";
+import { Ionicons } from "@expo/vector-icons";
+import React, { useEffect, useRef } from "react";
+import { Animated, Easing, StyleSheet, Text, View } from "react-native";
 
 const EmptyFavorites = () => {
   const { t } = useAppTranslation();
@@ -52,7 +52,7 @@ const styles = StyleSheet.create({
   text: {
     fontSize: 18,
     color: COLORS.primary,
-    fontFamily: "IBMPlexBold",
+    fontFamily: "OpenSans",
     marginTop: 10,
   },
   hint: {

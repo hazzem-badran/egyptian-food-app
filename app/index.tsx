@@ -47,7 +47,7 @@ export default function Index() {
                 )
               )}
             </View>
-          ))}===
+          ))}
         </View>
       </Animated.ScrollView>
     </View>

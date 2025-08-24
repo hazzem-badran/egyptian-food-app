@@ -4,16 +4,16 @@ import { getRecipeImage } from "@/utils/getRecipeImage";
 import { useRouter } from "expo-router";
 import React from "react";
 import {
-    Image,
-    StyleSheet,
-    Text,
-    TextStyle,
-    TouchableOpacity,
+  Image,
+  StyleSheet,
+  Text,
+  TextStyle,
+  TouchableOpacity,
 } from "react-native";
 
 const DishesCard = ({ item, path }: any) => {
   const router = useRouter();
-  const { isEnLang } = useAppTranslation();
+  const { t, isEnLang } = useAppTranslation();
 
   const dynamicTextAlign: TextStyle = {
     textAlign: !isEnLang ? "right" : "left",
@@ -34,7 +34,7 @@ const DishesCard = ({ item, path }: any) => {
         ellipsizeMode="tail"
         style={[styles.titleCard, dynamicTextAlign]}
       >
-        {item.title}
+        {t(`${item.title}`)}
       </Text>
     </TouchableOpacity>
   );
@@ -44,7 +44,6 @@ export default DishesCard;
 
 const styles = StyleSheet.create({
   dishesCard: {
-    // backgroundColor: COLORS.card,
     backgroundColor: COLORS.card,
     width: "100%",
     height: 250,
@@ -69,8 +68,10 @@ const styles = StyleSheet.create({
   },
   titleCard: {
     color: COLORS.primary,
-    fontFamily: "IBMPlexBold",
-    fontSize: 20,
+    // fontFamily: "OpenSansItalic",
+    fontFamily: "OpenSans",
+    fontSize: 22,
+    fontWeight: "900",
     textAlign: "right",
     padding: 15,
     paddingRight: 25,

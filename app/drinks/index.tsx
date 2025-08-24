@@ -10,7 +10,7 @@ const DrinksPage = () => {
 
   return (
     <GenericPage
-      title="Drinks | المشوبات التقليدية"
+      title="drinks"
       data={DRINKS}
       route={ROUTES.DRINKS}
     />
