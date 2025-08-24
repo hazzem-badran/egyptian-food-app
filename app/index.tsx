@@ -1,17 +1,17 @@
-import { Dimensions, Image, StyleSheet, View } from "react-native";
-import Animated, { useAnimatedRef } from "react-native-reanimated";
-import { COLORS } from "@/theme/colors";
+import Card from "@/components/home/Card";
 import HelpTools from "@/components/home/HelpTools";
 import HeroImage from "@/components/home/HeroImage";
-import Card from "@/components/home/Card";
-import { FOOD_ROWS } from "@/constents/foodRows";
+import { FOOD_ROWS } from "@/constants/foodRows";
 import useAppTranslation from "@/hooks/useAppTranslation";
+import { COLORS } from "@/theme/colors";
+import { Dimensions, Image, StyleSheet, View } from "react-native";
+import Animated, { useAnimatedRef } from "react-native-reanimated";
 
 const { width } = Dimensions.get("window");
 
 export default function Index() {
   const scrollRef = useAnimatedRef<Animated.ScrollView>();
-   const {isArLang} = useAppTranslation()
+  const { isArLang } = useAppTranslation();
 
   return (
     <View style={styles.root}>
@@ -40,13 +40,14 @@ export default function Index() {
                     title={item.title}
                     color={item.color}
                     isFull={item.isFull}
+                    route={item.route}
                   />
                 ) : (
                   <View key={`empty-${index}`} style={styles.emptyCard} />
                 )
               )}
             </View>
-          ))}
+          ))}===
         </View>
       </Animated.ScrollView>
     </View>

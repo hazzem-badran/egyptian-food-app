@@ -2,14 +2,17 @@ import { View, Text, TouchableOpacity, StyleSheet, Image } from "react-native";
 import React from "react";
 import { COLORS } from "@/theme/colors";
 import useAppTranslation from "@/hooks/useAppTranslation";
+import { useRouter } from "expo-router";
 
 interface CardProps {
   title: string;
   color: keyof typeof COLORS.cardColors;
   isFull?: boolean;
+  route: string;
 }
 
-const Card: React.FC<CardProps> = ({ title, color, isFull }) => {
+const Card: React.FC<CardProps> = ({ title, color, isFull, route }) => {
+  const router = useRouter();
   const { t } = useAppTranslation();
 
   const colors = COLORS.cardColors[color];
@@ -18,6 +21,9 @@ const Card: React.FC<CardProps> = ({ title, color, isFull }) => {
   return (
     <TouchableOpacity
       style={[styles.foodCategory, isFull && styles.foodCategoryFull]}
+      onPress={() => {
+        router.push(route as any);
+      }}
     >
       <View style={styles.iconContainer}>
         <Image

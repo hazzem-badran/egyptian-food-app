@@ -5,7 +5,7 @@ export const ROUTES: RoutesMap = {
   DESSERTS: "/desserts",
   APPETIZERS: "/appetizers",
   MAIN_DISHES: "/main-dishes",
-  DIGNITY: "/dignity",
+  PHARAONIC: "/pharaonic",
   MUNA: "/muna",
   BAKED: "/baked",
   DRINKS: "/drinks",

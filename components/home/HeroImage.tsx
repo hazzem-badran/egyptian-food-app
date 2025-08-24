@@ -1,20 +1,20 @@
-import React, { useEffect, useState, useCallback } from "react";
-import {
-  View,
-  StyleSheet,
-  Dimensions,
-  Text,
-  TouchableOpacity,
-} from "react-native";
-import Animated, {
-  interpolate,
-  useAnimatedStyle,
-  useScrollViewOffset,
-} from "react-native-reanimated";
-import { ALL_RECIPES } from "@/constents/foods/allRecipes";
-import { useRouter } from "expo-router";
+import { ALL_RECIPES } from "@/constants/foods/allRecipes";
 import { HeroImageProps } from "@/types/heroImageProps.types";
 import { getRecipeImage } from "@/utils/getRecipeImage";
+import { useRouter } from "expo-router";
+import React, { useCallback, useEffect, useState } from "react";
+import {
+    Dimensions,
+    StyleSheet,
+    Text,
+    TouchableOpacity,
+    View,
+} from "react-native";
+import Animated, {
+    interpolate,
+    useAnimatedStyle,
+    useScrollViewOffset,
+} from "react-native-reanimated";
 
 const IMG_HEIGHT = 300;
 const { width } = Dimensions.get("window");
