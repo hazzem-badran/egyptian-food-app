@@ -2,7 +2,7 @@ import { View, StyleSheet } from "react-native";
 import React from "react";
 import { Ionicons } from "@expo/vector-icons";
 import { useRouter } from "expo-router";
-// import { ROUTES } from "@/constants/routes";
+import { ROUTES } from "@/constants/routes";
 
 const HelpTools = () => {
   const router = useRouter();
@@ -12,19 +12,19 @@ const HelpTools = () => {
         name="settings-outline"
         size={26}
         color="white"
-        // onPress={() => router.push(ROUTES.SETTINGS)}
+        onPress={() => router.push(ROUTES.SETTINGS)}
       />
       <Ionicons
         name="search-outline"
         size={26}
         color="white"
-        // onPress={() => router.push(ROUTES.SEARCH)}
+        onPress={() => router.push(ROUTES.SEARCH)}
       />
       <Ionicons
         name="bookmark-outline"
         size={26}
         color="white"
-        // onPress={() => router.push(ROUTES.FAVORITES)}
+        onPress={() => router.push(ROUTES.FAVORITES)}
       />
     </View>
   );

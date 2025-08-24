@@ -47,7 +47,7 @@ const HeroImage: React.FC<HeroImageProps> = ({ scrollRef, isArLang }) => {
     };
   });
 
-  // // دالة خلط Fisher-Yates المحسنة
+  // دالة خلط Fisher-Yates المحسنة
   const shuffleRecipes = useCallback(() => {
     const shuffled = [...ALL_RECIPES];
 
@@ -107,10 +107,10 @@ const HeroImage: React.FC<HeroImageProps> = ({ scrollRef, isArLang }) => {
   return (
     <TouchableOpacity
       onPress={() => {
-        // router.push({
-        //   pathname: `/[id]`,
-        //   params: { id: currentRecipe.id, category: currentRecipe.category },
-        // });
+        router.push({
+          pathname: `/[id]`,
+          params: { id: currentRecipe.id, category: currentRecipe.category },
+        });
       }}
     >
       <Animated.Image

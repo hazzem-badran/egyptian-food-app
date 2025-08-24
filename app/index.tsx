@@ -1,4 +1,4 @@
-import Card from "@/components/home/Card";
+import FoodCard from "@/components/home/FoodCard";
 import HelpTools from "@/components/home/HelpTools";
 import HeroImage from "@/components/home/HeroImage";
 import { FOOD_ROWS } from "@/constants/foodRows";
@@ -35,7 +35,7 @@ export default function Index() {
             <View key={rowIndex} style={styles.rowItems}>
               {row.map((item, index) =>
                 item ? (
-                  <Card
+                  <FoodCard
                     key={item.title}
                     title={item.title}
                     color={item.color}
