@@ -12,7 +12,7 @@ import {
   View,
 } from "react-native";
 
-const SectionHeading: React.FC<SectionHeadingProps> = ({ title }) => {
+const SectionHeading: React.FC<SectionHeadingProps> = ({ title, hasBack = true }) => {
   const { t } = useAppTranslation();
   const router = useRouter();
 
@@ -25,9 +25,11 @@ const SectionHeading: React.FC<SectionHeadingProps> = ({ title }) => {
     >
       <Text style={styles.heading}>{t(title)}</Text>
 
-      <TouchableOpacity style={styles.backButton} onPress={() => router.back()}>
-        <Ionicons name="chevron-forward" size={28} color={COLORS.primary} />
-      </TouchableOpacity>
+      {hasBack && (
+        <TouchableOpacity style={styles.backButton} onPress={() => router.back()}>
+          <Ionicons name="chevron-forward" size={28} color={COLORS.primary} />
+        </TouchableOpacity>
+      )}
     </View>
   );
 };
@@ -40,7 +42,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "center",
-    marginBottom: 16,
+    marginBottom: 5,
     marginTop: 0,
     position: "relative",
   },
@@ -48,16 +50,14 @@ const styles = StyleSheet.create({
     marginTop: 25,
   },
   heading: {
-    fontSize: 22,
+    fontSize: 50,
     fontFamily: "OpenSansItalic",
     fontWeight: "900",
     textAlign: "center",
     color: COLORS.primary,
-
   },
   backButton: {
     position: "absolute",
     right: 0,
-    // padding: 8,
   },
 });

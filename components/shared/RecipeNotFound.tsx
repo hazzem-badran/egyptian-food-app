@@ -24,6 +24,7 @@ const RecipeNotFound: React.FC = () => {
         }),
       ])
     ).start();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const handleGoBack = (): void => {
