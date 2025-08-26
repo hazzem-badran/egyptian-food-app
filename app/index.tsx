@@ -1,6 +1,7 @@
 import FoodCard from "@/components/home/FoodCard";
 import HelpTools from "@/components/home/HelpTools";
 import HeroImage from "@/components/home/HeroImage";
+import SectionHeading from "@/components/shared/SectionHeading";
 import { FOOD_ROWS } from "@/constants/foodRows";
 import useAppTranslation from "@/hooks/useAppTranslation";
 import { COLORS } from "@/theme/colors";
@@ -11,7 +12,7 @@ const { width } = Dimensions.get("window");
 
 export default function Index() {
   const scrollRef = useAnimatedRef<Animated.ScrollView>();
-  const { isArLang } = useAppTranslation();
+  const { t, isArLang } = useAppTranslation();
 
   return (
     <View style={styles.root}>
@@ -30,6 +31,8 @@ export default function Index() {
           source={require("@/assets/images/home/aax.jpg")}
           style={styles.decor}
         />
+
+        <SectionHeading title={t("egyptian-recipes")} hasBack={false} />
 
         <View style={styles.containItems}>
           {FOOD_ROWS.map((row, rowIndex) => (
@@ -64,7 +67,6 @@ const styles = StyleSheet.create({
     height: 55,
     marginBottom: 20,
     resizeMode: "cover",
-    
   },
   content: {
     width: "100%",

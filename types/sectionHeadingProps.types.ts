@@ -1,3 +1,4 @@
-export type SectionHeadingProps = {
+export interface SectionHeadingProps {
   title: string;
+  hasBack?: boolean;
 }
