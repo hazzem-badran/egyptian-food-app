@@ -25,7 +25,7 @@ const DishesDetails: React.FC = () => {
   const favorite: boolean = useMemo(
     () =>
       recipe?.id !== undefined
-        ? isFavorite(recipe.id, CATEGORIES.DIGNITY)
+        ? isFavorite(recipe.id, CATEGORIES.PHARAONIC)
         : false,
     [recipe?.id, isFavorite]
   );
@@ -34,7 +34,7 @@ const DishesDetails: React.FC = () => {
     if (recipe) {
       toggleFavorite({
         id: recipe.id,
-        category: CATEGORIES.DIGNITY,
+        category: CATEGORIES.PHARAONIC,
       });
     }
   };
