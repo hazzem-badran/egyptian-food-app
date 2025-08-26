@@ -20,13 +20,11 @@ export const getRecipeImage = (imageKey: string) => {
       return IMAGES.dessert_default;
     case "drink":
       return IMAGES.drink_default;
-    case "muna":
-      return IMAGES.muna_default;
     case "salad":
       return IMAGES.salad_default;
-    case "dignity":
-      return IMAGES.dignity_default;
+    case "pharaonic":
+      return IMAGES.pharaonic_default;
     default:
-      return IMAGES.recipe_default;
+      return IMAGES.egyptian_default;
   }
 };

@@ -1,5 +1,5 @@
 import GenericPage from "@/components/shared/GenericPage";
-import { PHARAONIC_AR, PHARAONIC_EN } from "@/constants/foods/dignity";
+import { PHARAONIC_AR, PHARAONIC_EN } from "@/constants/foods/pharaonic";
 import { ROUTES } from "@/constants/routes";
 import useAppTranslation from "@/hooks/useAppTranslation";
 import { BaseRecipe } from "@/types/recipe.types";

@@ -26,7 +26,7 @@ export default function Index() {
         <HeroImage scrollRef={scrollRef} isArLang={isArLang} />
 
         <Image
-          source={require("@/assets/images/home/decor.jpg")}
+          source={require("@/assets/images/home/aax.jpg")}
           style={styles.decor}
         />
 
@@ -62,7 +62,8 @@ const styles = StyleSheet.create({
     width: width,
     height: 55,
     marginBottom: 20,
-    resizeMode: "repeat",
+    resizeMode: "cover",
+    
   },
   content: {
     width: "100%",

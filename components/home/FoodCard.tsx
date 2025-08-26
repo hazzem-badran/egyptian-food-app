@@ -56,7 +56,7 @@ const createStyles = (color: any) =>
       borderRadius: 20,
       alignItems: "center",
       justifyContent: "space-between",
-      paddingVertical: 20,
+      paddingVertical: 15,
       shadowColor: COLORS.primary,
       shadowOffset: {
         width: 0,
@@ -100,7 +100,7 @@ const createStyles = (color: any) =>
     },
     foodCategoryFull: {
       width: "100%",
-      height: 120,
+      height: 100,
       borderRadius: 20,
       flexDirection: "row",
       alignItems: "center",

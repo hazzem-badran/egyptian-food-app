@@ -1,7 +1,7 @@
 import RecipeDetails from "@/components/shared/RecipeDetails";
 import RecipeNotFound from "@/components/shared/RecipeNotFound";
 import { CATEGORIES } from "@/constants/categories";
-import { PHARAONIC_AR, PHARAONIC_EN } from "@/constants/foods/dignity";
+import { PHARAONIC_AR, PHARAONIC_EN } from "@/constants/foods/pharaonic";
 import useAppTranslation from "@/hooks/useAppTranslation";
 import { useFavoritesStore } from "@/store/favoritesStore";
 import { BaseRecipe } from "@/types/recipe.types";
