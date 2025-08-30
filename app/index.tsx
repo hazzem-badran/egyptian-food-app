@@ -27,7 +27,6 @@ export default function Index() {
         <HeroImage scrollRef={scrollRef} isArLang={isArLang} />
 
         <Image
-          // source={require("@/assets/images/home/axx3.jpeg")}
           source={require("@/assets/images/home/aax.jpg")}
           style={styles.decor}
         />
