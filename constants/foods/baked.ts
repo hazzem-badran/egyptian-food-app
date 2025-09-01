@@ -1,0 +1,313 @@
+import { BaseRecipe } from "@/types/recipe.types";
+
+export const BAKED_AR: BaseRecipe[] = [
+  {
+    id: 1,
+    title: "الخبز البلدي",
+    image: "baked_baladi_bread",
+    description:
+      "من أقدم أنواع الخبز المصري، يعتمد على الطحين والماء وعملية التخمير التقليدية.",
+    time: "3 ساعات (مع التخمير)",
+    difficulty: "متوسطة",
+    servings: "يكفي عدة أشخاص",
+    ingredients: ["2 كوب دقيق", "1 كوب ماء", "ملح", "خميرة"],
+    steps: [
+      "اخلط الدقيق مع الملح والخميرة.",
+      "أضف الماء تدريجياً واعجن حتى تتكون عجينة ناعمة.",
+      "اترك العجينة تختمر لمدة ساعتين.",
+      "شكّل العجينة على شكل أرغفة واخبزها في فرن متوسط الحرارة حتى تنضج.",
+    ],
+  },
+  {
+    id: 2,
+    title: "العيش الفينو والكيزر",
+    image: "baked_fino_kaiser",
+    description:
+      "أنواع خبز خفيفة وهشة تستخدم للإفطار والسحور، سهلة التقطيع للسندوتشات.",
+    time: "2.5 ساعة",
+    difficulty: "متوسطة",
+    servings: "يكفي عدة أشخاص",
+    ingredients: ["3 كوب دقيق", "1 كوب ماء", "ملح", "خميرة", "سكر"],
+    steps: [
+      "اخلط الدقيق مع الملح والخميرة والسكر.",
+      "أضف الماء تدريجياً واعجن حتى تصبح العجينة مرنة.",
+      "اتركها لتختمر لمدة ساعة.",
+      "شكّل العجينة على شكل أرغفة رفيعة واخبزها حتى تتحمر.",
+    ],
+  },
+  {
+    id: 3,
+    title: "عيش الشوفان",
+    image: "baked_oat_bread",
+    description: "خبز صحي غني بالألياف والمعادن، مناسب للوجبات اليومية.",
+    time: "2 ساعة",
+    difficulty: "سهلة",
+    servings: "يكفي عدة أشخاص",
+    ingredients: ["2 كوب دقيق شوفان", "1 كوب ماء", "ملح", "خميرة"],
+    steps: [
+      "اخلط دقيق الشوفان مع الملح والخميرة.",
+      "أضف الماء واعجن جيدًا.",
+      "اتركه يختمر لمدة ساعة.",
+      "شكّل العجينة واخبزها في فرن متوسط الحرارة حتى تنضج.",
+    ],
+  },
+  {
+    id: 5,
+    title: "المصبوبة",
+    image: "baked_masboubah",
+    description:
+      "فطيرة مصرية قديمة من الصعيد، تقدم غالباً مع العسل أو التقلية.",
+    time: "1.5 ساعة",
+    difficulty: "سهلة",
+    servings: "4-6 أشخاص",
+    ingredients: ["2 كوب دقيق", "1 كوب ماء", "ملح", "زيت أو سمن"],
+    steps: [
+      "اخلط المكونات جيدًا لتكوين عجينة طرية.",
+      "افرد العجينة في صينية مدهونة بالزيت.",
+      "اخبزها في فرن متوسط الحرارة حتى تصبح ذهبية اللون.",
+      "قدمها مع العسل أو التقلية.",
+    ],
+  },
+  {
+    id: 6,
+    title: "الفطير المشلتت",
+    image: "baked_feteer_meshaltet",
+    description:
+      "فطيرة مصرية تقليدية، يمكن حشوها بالجبن أو اللحمة أو تناولها سادة.",
+    time: "2 ساعة",
+    difficulty: "متوسطة",
+    servings: "4-6 أشخاص",
+    ingredients: ["2 كوب دقيق", "1/2 كوب سمن", "1/2 كوب ماء", "ملح"],
+    steps: [
+      "اعجن الدقيق مع السمن والماء والملح حتى تصبح عجينة مرنة.",
+      "افرد العجينة واخبزها على صاج ساخن.",
+      "يمكن تقديمها سادة أو محشوة حسب الرغبة.",
+    ],
+  },
+  {
+    id: 8,
+    title: "باتون ساليه",
+    image: "baked_baton_saleh",
+    description:
+      "نوع من المخبوزات المالحة الشهيرة، يُقدّم كوجبة خفيفة أو مع الشاي.",
+    time: "1 ساعة",
+    difficulty: "سهلة",
+    servings: "4-6 أشخاص",
+    ingredients: ["دقيق", "زبدة", "ملح", "ماء", "مكسرات أو بذور للتزيين"],
+    steps: [
+      "اعجن الدقيق مع الزبدة والماء والملح.",
+      "شكّل العجينة على شكل أصابع أو أقراص.",
+      "اخبزها حتى تنضج وتتحمر.",
+    ],
+  },
+  {
+    id: 9,
+    title: "المناقيش",
+    image: "baked_manaqeesh",
+    description:
+      "معجنات شهيرة بالزعتر أو الجبنة أو اللحمة، وجبة لذيذة ومفيدة للإفطار.",
+    time: "1.5 ساعة",
+    difficulty: "متوسطة",
+    servings: "4 أشخاص",
+    ingredients: ["عجينة", "زعتر أو جبنة أو لحم", "زيت زيتون"],
+    steps: [
+      "افرد العجينة وضع الحشوة المفضلة.",
+      "اخبزها في فرن متوسط الحرارة حتى تتحمر.",
+      "قدّمها ساخنة.",
+    ],
+  },
+  {
+    id: 10,
+    title: "النواعم",
+    image: "baked_nawameh",
+    description:
+      "أنواع بسكويت مختلفة، يمكن أن تكون سادة أو بالعجوة أو بالملبن، مشهورة في مصر.",
+    time: "45 دقيقة",
+    difficulty: "سهلة",
+    servings: "4-6 أشخاص",
+    ingredients: ["دقيق", "سمن", "سكر", "حشوة حسب الرغبة"],
+    steps: [
+      "اعجن المكونات لتكوين عجينة طرية.",
+      "شكّل العجينة واملأها بالحشوة إن وُجدت.",
+      "اخبزها حتى تصبح ذهبية اللون.",
+    ],
+  },
+  {
+    id: 11,
+    title: "البقسماط",
+    image: "baked_baksamat",
+    description:
+      "بسكويت جاف بأنواعه المختلفة، مثل البقسماط بالسمسم أو حبة البركة أو السن.",
+    time: "40 دقيقة",
+    difficulty: "سهلة",
+    servings: "4-6 أشخاص",
+    ingredients: ["دقيق", "سكر", "سمن", "بيكنج باودر", "سمسم أو حبة البركة"],
+    steps: [
+      "اعجن جميع المكونات لتكوين عجينة متماسكة.",
+      "شكّل العجينة حسب الرغبة.",
+      "اخبزها حتى تصبح ذهبية ومقرمشة.",
+    ],
+  },
+];
+
+export const BAKED_EN: BaseRecipe[] = [
+  {
+    id: 1,
+    title: "Baladi Bread",
+    image: "baked_baladi_bread",
+    description:
+      "One of the oldest types of Egyptian bread, made from flour and water with traditional fermentation.",
+    time: "3 hours (including fermentation)",
+    difficulty: "Medium",
+    servings: "Serves multiple people",
+    ingredients: ["2 cups flour", "1 cup water", "Salt", "Yeast"],
+    steps: [
+      "Mix the flour with salt and yeast.",
+      "Gradually add water and knead into a smooth dough.",
+      "Let the dough ferment for 2 hours.",
+      "Shape into loaves and bake in a medium oven until cooked.",
+    ],
+  },
+  {
+    id: 2,
+    title: "Fino & Kaiser Bread",
+    image: "baked_fino_kaiser",
+    description:
+      "Light and fluffy bread, commonly used for breakfast or suhoor, ideal for sandwiches.",
+    time: "2.5 hours",
+    difficulty: "Medium",
+    servings: "Serves multiple people",
+    ingredients: ["3 cups flour", "1 cup water", "Salt", "Yeast", "Sugar"],
+    steps: [
+      "Mix flour with salt, yeast, and sugar.",
+      "Gradually add water and knead until flexible dough forms.",
+      "Let it rise for 1 hour.",
+      "Shape into thin loaves and bake until golden.",
+    ],
+  },
+  {
+    id: 3,
+    title: "Oat Bread",
+    image: "baked_oat_bread",
+    description:
+      "Healthy bread rich in fiber and minerals, perfect for daily meals.",
+    time: "2 hours",
+    difficulty: "Easy",
+    servings: "Serves multiple people",
+    ingredients: ["2 cups oat flour", "1 cup water", "Salt", "Yeast"],
+    steps: [
+      "Mix oat flour with salt and yeast.",
+      "Add water and knead well.",
+      "Let the dough rise for 1 hour.",
+      "Shape and bake in a medium oven until done.",
+    ],
+  },
+  {
+    id: 5,
+    title: "Masboubah",
+    image: "baked_masboubah",
+    description:
+      "Traditional Egyptian flatbread from Upper Egypt, often served with honey or ghee.",
+    time: "1.5 hours",
+    difficulty: "Easy",
+    servings: "4-6 people",
+    ingredients: ["2 cups flour", "1 cup water", "Salt", "Oil or ghee"],
+    steps: [
+      "Mix ingredients to form a soft dough.",
+      "Roll out the dough in a greased pan.",
+      "Bake in a medium oven until golden.",
+      "Serve with honey or ghee.",
+    ],
+  },
+  {
+    id: 6,
+    title: "Feteer Meshaltet",
+    image: "baked_feteer_meshaltet",
+    description:
+      "Traditional Egyptian layered pastry, can be filled with cheese, meat, or eaten plain.",
+    time: "2 hours",
+    difficulty: "Medium",
+    servings: "4-6 people",
+    ingredients: ["2 cups flour", "1/2 cup ghee", "1/2 cup water", "Salt"],
+    steps: [
+      "Knead flour, ghee, water, and salt into a flexible dough.",
+      "Roll out the dough and bake on a hot pan.",
+      "Serve plain or with filling as desired.",
+    ],
+  },
+  {
+    id: 8,
+    title: "Baton Saleh",
+    image: "baked_baton_saleh",
+    description: "Famous savory pastry, often served as a snack or with tea.",
+    time: "1 hour",
+    difficulty: "Easy",
+    servings: "4-6 people",
+    ingredients: [
+      "Flour",
+      "Butter",
+      "Salt",
+      "Water",
+      "Seeds or nuts for topping",
+    ],
+    steps: [
+      "Knead flour with butter, water, and salt.",
+      "Shape dough into sticks or discs.",
+      "Bake until golden brown.",
+    ],
+  },
+  {
+    id: 9,
+    title: "Manaqeesh",
+    image: "baked_manaqeesh",
+    description:
+      "Famous pastries topped with za'atar, cheese, or meat, delicious for breakfast.",
+    time: "1.5 hours",
+    difficulty: "Medium",
+    servings: "4 people",
+    ingredients: ["Dough", "Za'atar or cheese or meat", "Olive oil"],
+    steps: [
+      "Roll out dough and add desired topping.",
+      "Bake in a medium oven until golden.",
+      "Serve hot.",
+    ],
+  },
+  {
+    id: 10,
+    title: "Nawameh",
+    image: "baked_nawameh",
+    description:
+      "Various cookies, plain or filled with date paste or Turkish delight, popular in Egypt.",
+    time: "45 minutes",
+    difficulty: "Easy",
+    servings: "4-6 people",
+    ingredients: ["Flour", "Ghee", "Sugar", "Filling if desired"],
+    steps: [
+      "Knead ingredients to form soft dough.",
+      "Shape dough and add filling if available.",
+      "Bake until golden.",
+    ],
+  },
+  {
+    id: 11,
+    title: "Baksamat",
+    image: "baked_baksamat",
+    description:
+      "Dry biscuit available in different varieties, such as sesame, black seed, or anise.",
+    time: "40 minutes",
+    difficulty: "Easy",
+    servings: "4-6 people",
+    ingredients: [
+      "Flour",
+      "Sugar",
+      "Ghee",
+      "Baking powder",
+      "Sesame or black seed",
+    ],
+    steps: [
+      "Knead all ingredients into a firm dough.",
+      "Shape as desired.",
+      "Bake until golden and crisp.",
+    ],
+  },
+];
